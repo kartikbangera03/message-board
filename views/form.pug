@@ -1,0 +1,12 @@
+extends layout 
+
+block content 
+    h1 "Add Your Message"
+    form(action="/new" method="POST")
+        p User Name :
+        input(type="text" name="userName" placeholder="")
+        p Message :
+        input(type="text" name="userMessage" placeholder="")    
+        
+        p 
+            input(type="submit")    
